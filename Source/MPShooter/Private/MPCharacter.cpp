@@ -35,6 +35,7 @@ AMPCharacter::AMPCharacter()
 	WeaponAttachSocketName = "WeaponSocket";
 
 	GetCapsuleComponent()->SetCollisionResponseToChannel(COLLISION_WEAPON, ECR_Ignore);
+
 }
 
 // Called when the game starts or when spawned

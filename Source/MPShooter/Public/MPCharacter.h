@@ -57,7 +57,7 @@ protected:
 	float ZoomedFOV;
 	float DefaultFOV;
 
-	UPROPERTY(Replicated)
+	UPROPERTY(Replicated, BlueprintReadWrite)
 	AMPWeapon* CurrentWeapon;
 
 	UPROPERTY(EditDefaultsOnly, Category = "Player")
@@ -66,7 +66,7 @@ protected:
 	UPROPERTY(VisibleDefaultsOnly, Category = "Player")
 	FName WeaponAttachSocketName;
 
-	UPROPERTY(Replicated, BlueprintReadOnly, Category = "Player")
+	UPROPERTY(Replicated, BlueprintReadWrite, Category = "Player")
 	bool bDied;
 public:
 	// Called every frame
