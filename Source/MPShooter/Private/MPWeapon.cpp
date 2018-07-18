@@ -184,6 +184,7 @@ void AMPWeapon::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetim
 	Super::GetLifetimeReplicatedProps(OutLifetimeProps);
 	//
 	DOREPLIFETIME_CONDITION(AMPWeapon, HitScanTrace, COND_SkipOwner);
+	DOREPLIFETIME(AMPWeapon, WeaponDamage);
 
 }
 
