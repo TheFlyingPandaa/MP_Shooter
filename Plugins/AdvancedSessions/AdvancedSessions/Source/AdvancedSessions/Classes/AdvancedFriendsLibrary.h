@@ -50,6 +50,10 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "Online|AdvancedFriends|RecentPlayersList")
 	static void GetStoredRecentPlayersList(FBPUniqueNetId UniqueNetId, TArray<FBPOnlineRecentPlayer> &PlayersList);
 
+	//HampuzCustomCode
+	UFUNCTION(BlueprintCallable, Category = "Online|AdvancedFriends|HampuzCustomCode")
+	static FString GetUniqueNetIDOfFriendAsString(FBPUniqueNetId UniqueNetId);
+
 	// Check if a UniqueNetId is a friend
 	UFUNCTION(BlueprintPure, Category = "Online|AdvancedFriends|FriendsList")
 	static void IsAFriend(APlayerController *PlayerController, const FBPUniqueNetId UniqueNetId, bool &IsFriend);

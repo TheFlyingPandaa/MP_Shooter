@@ -220,6 +220,11 @@ void UAdvancedFriendsLibrary::GetStoredRecentPlayersList(FBPUniqueNetId UniqueNe
 	}
 }
 
+FString UAdvancedFriendsLibrary::GetUniqueNetIDOfFriendAsString(FBPUniqueNetId UniqueNetId)
+{
+	return UniqueNetId.GetUniqueNetIdString();
+}
+
 void UAdvancedFriendsLibrary::GetStoredFriendsList(APlayerController *PlayerController, TArray<FBPFriendInfo> &FriendsList)
 {
 

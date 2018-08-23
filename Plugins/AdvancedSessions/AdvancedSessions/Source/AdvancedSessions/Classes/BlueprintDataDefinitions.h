@@ -204,6 +204,16 @@ public:
 		bUseDirectPointer = false;
 		UniqueNetIdPtr = nullptr;
 	}
+
+	//HampuzCustomCode
+	FString GetUniqueNetIdString() const {
+		if (UniqueNetId.IsValid())
+		{
+			return UniqueNetId->ToString();
+		}
+
+		return "";
+	}
 };
 
 USTRUCT(BluePrintType)

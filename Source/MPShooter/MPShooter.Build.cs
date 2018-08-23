@@ -17,6 +17,7 @@ public class MPShooter : ModuleRules
         PrivateDependencyModuleNames.AddRange(new string[] { "OnlineSubsystem", "Sockets", "Networking", "OnlineSubsystemUtils","Voice", "Steamworks","OnlineSubsystemSteam"});
         PrivateDependencyModuleNames.Add("OnlineSubsystem");
 
-
+        MinFilesUsingPrecompiledHeaderOverride = 1;
+        bFasterWithoutUnity = true;
     }
 }
